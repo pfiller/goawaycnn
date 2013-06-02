@@ -1,0 +1,16 @@
+{
+  "name": "Go Away, CNN",
+  "version": "2013.6.2",
+  "manifest_version": 2,
+  
+  "description": "Stop looking at CNN all the time, dummy.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.cnn.com/*"],
+      "css": ["goawaycnn.css"],
+      "js": ["jquery.js","goawaycnn.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
